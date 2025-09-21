@@ -1,0 +1,14 @@
+[package]
+org = "nust"
+name = "asset_management"
+version = "1.0.0"
+distribution = "2201.8.0"
+
+[build-options]
+observabilityIncluded = true
+
+# No additional dependencies needed as we're using core Ballerina packages:
+# - ballerina/http (included by default)
+# - ballerina/time (included by default)
+# - ballerina/log (included by default)
+# - ballerina/io (included by default)

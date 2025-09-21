@@ -1,0 +1,33 @@
+[package]
+org = "car_rental"
+name = "grpc_system"
+version = "1.0.0"
+distribution = "2201.8.0"
+
+[build-options]
+observabilityIncluded = true
+
+[tool.grpc]
+id = "car_rental"
+protoPath = "car_rental.proto"
+outputPath = "generated"
+
+[[platform.java17.dependency]]
+groupId = "io.grpc"
+artifactId = "grpc-netty-shaded"
+version = "1.53.0"
+
+[[platform.java17.dependency]]
+groupId = "io.grpc" 
+artifactId = "grpc-protobuf"
+version = "1.53.0"
+
+[[platform.java17.dependency]]
+groupId = "io.grpc"
+artifactId = "grpc-stub" 
+version = "1.53.0"
+
+[[platform.java17.dependency]]
+groupId = "com.google.protobuf"
+artifactId = "protobuf-java"
+version = "3.21.12"
