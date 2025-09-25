@@ -3,10 +3,7 @@ import ballerina/log;
 import ballerina/time;
 import ballerina/uuid;
 
-// Type definitions based on protobuf
-// Type definitions based on protobuf
-// (REMOVED DUPLICATE TYPE DEFINITIONS HERE. ENSURE THESE TYPES ARE ONLY DEFINED ONCE IN YOUR PROJECT.)
-// If you need these types, keep them in a single file only, and remove all other duplicate definitions from other files in your project.
+
     boolean success;
     string message;
 
@@ -418,5 +415,6 @@ service "CarRentalService" on new grpc:Listener(9090) {
         };
     }
 }
+
 
 const string CAR_RENTAL_DESC = "0A0F6361725F72656E74616C2E70726F746F120A6361725F72656E74616C22DD020A034361721206706C6174651801120C6D61(trimmed for brevity)";
